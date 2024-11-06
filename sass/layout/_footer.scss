@@ -1,0 +1,58 @@
+.footer-principal{
+    background-color: $dark-violet;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 20px;
+    @include breakpoint(desktop){
+        padding-top: 40px;
+    }
+    @include breakpoint(desktopxxl){
+        padding-top: 60px;
+    }
+    .uppers-lowers{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        @include breakpoint(desktop){
+            flex-direction: row;
+        }
+        .upper-footer{
+            display: flex;
+            gap: 17px;
+            p{
+                color: $white-light;
+                font-size: 18px;
+                @include breakpoint(desktop){
+                    font-size: 24px;
+                }
+            }
+        }
+        .lower-footer{
+            display: flex;
+            gap: 17px;
+            p{
+                color: $white-light;
+                font-size: 18px;
+                @include breakpoint(desktop){
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+    p{
+        font-size: 12px;
+        color: $white-light;
+        @include breakpoint(desktop){
+            font-size: 18px;
+        }
+        @include breakpoint(desktopxxl){
+            font-size: 24px;
+        }
+    }
+}
